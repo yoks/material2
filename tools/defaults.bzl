@@ -2,8 +2,8 @@
 
 load("@angular//:index.bzl", _ng_module = "ng_module", _ng_package = "ng_package")
 load("@build_bazel_rules_nodejs//:defs.bzl", _jasmine_node_test = "jasmine_node_test")
-load("@build_bazel_rules_typescript//:defs.bzl", _ts_library = "ts_library",
-  _ts_web_test_suite = "ts_web_test_suite")
+load("@build_bazel_rules_typescript//:defs.bzl", _ts_library = "ts_library",)
+load("@build_bazel_rules_karma//:defaults.bzl",  _ts_web_test_suite = "ts_web_test_suite")
 load("//tools/markdown-to-html:index.bzl", _markdown_to_html = "markdown_to_html")
 load("//:packages.bzl", "VERSION_PLACEHOLDER_REPLACEMENTS")
 
